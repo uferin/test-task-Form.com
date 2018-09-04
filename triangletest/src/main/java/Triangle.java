@@ -4,13 +4,14 @@ public class Triangle {
         int rez = 0;
         if (a + b > c && a + c > b && b + c > a) {
             if ((a == b) && (b == c) && (c == a)) {
-                rez = 3;
+                rez = 3; //equilateral triangle
             } else if ((a == b) || (b == c) || (c == a)) {
-                rez = 2;
+                rez = 2; //isoscele triangle
             } else {
-                rez = 1;
+                rez = 1; //scalene triangle
             }
-        } else  { rez = 4; }
+        } else  { rez = 4; //error
+                }
         return rez;
     }
 }
